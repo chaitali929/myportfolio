@@ -1,0 +1,109 @@
+/* Default Projects Styles */
+.projects-container {
+    padding: 2rem 5%;
+    background-color: #f4f8fb;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Hover effect for project cards */
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .project-name:hover {
+    color: #2980b9; /* Change color on hover */
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Mobile and Tablet Screens - Below 768px */
+  @media (max-width: 768px) {
+    .projects-container {
+      padding: 2rem 3%;  /* Adjust padding for smaller screens */
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;  /* Single column layout on smaller screens */
+      gap: 1.5rem;
+    }
+  
+    .projects-title {
+      font-size: 2rem;  /* Adjust title font size for mobile */
+    }
+  
+    .project-card {
+      padding: 1.5rem;  /* Adjust padding for smaller screen project cards */
+    }
+  
+    .project-name {
+      font-size: 1.4rem;  /* Adjust font size for project names */
+    }
+  
+    .project-description {
+      font-size: 0.9rem;  /* Adjust description font size */
+    }
+  }
+  
+  /* Small Screens (Phones) - Below 480px */
+  @media (max-width: 480px) {
+    .projects-container {
+      padding: 1.5rem 2%;  /* Further reduce padding for very small screens */
+    }
+  
+    .projects-title {
+      font-size: 1.8rem;  /* Smaller title size */
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;  /* Ensure only 1 column */
+      gap: 1rem;  /* Reduce gap between project cards */
+    }
+  
+    .project-card {
+      padding: 1.2rem;  /* Reduce card padding */
+    }
+  
+    .project-name {
+      font-size: 1.2rem;  /* Adjust project name font size */
+    }
+  
+    .project-description {
+      font-size: 0.9rem;  /* Adjust project description font size */
+    }
+  }
+  

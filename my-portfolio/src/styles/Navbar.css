@@ -1,0 +1,64 @@
+/* Default Navbar Styles */
+.navbar {
+    background-color: #ADD8E6; /* Light Blue */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Ensures items are centered in the navbar */
+    width: 100%;  /* Take full width of the container */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #4b8cff; /* A darker blue on hover */
+  }
+  
+  /* Mobile View (Below 768px) */
+  @media (max-width: 768px) {
+    .navbar {
+      width: 100%;  /* Take full width on mobile */
+      padding: 1rem 2%;  /* Adjust padding to prevent edges from being too close */
+    }
+  
+    .nav-links {
+      justify-content: center;  /* Center the nav links */
+      width: 100%;  /* Make the nav links take full width */
+    }
+  
+    .nav-link {
+      margin: 0 0.8rem;  /* Adjust margin for smaller screens */
+      font-size: 16px;  /* Reduce font size slightly for better fit */
+    }
+  }
+  
+  /* Phone View (Below 480px) */
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 1rem 2%;  /* Adjust padding for very small screens */
+    }
+  
+    .nav-links {
+      width: 100%;  /* Ensure the navbar links take full width */
+      justify-content: center;  /* Keep the navbar items centered */
+    }
+  
+    .nav-link {
+      margin: 0 0.5rem;  /* Adjust the margin for very small screens */
+      font-size: 14px;  /* Slightly smaller font size for phone screens */
+    }
+  }
+  

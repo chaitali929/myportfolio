@@ -1,0 +1,97 @@
+/* General Container */
+.about-container {
+    padding: 2rem 5%;
+    background-color: #f4f8fb;  /* Light background */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-content {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Education & Skills Section */
+  .about-education, .about-skills, .about-certificates {
+    margin-bottom: 3rem;
+  }
+  
+  .education-container, .skills-container, .certificates-container {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-list, .skills-list, .certificates-list {
+    font-size: 1.2rem;
+    color: #555;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .education-list li, .skills-list li, .certificates-list li {
+    margin: 0.8rem 0;
+  }
+  
+  /* Skills List Styling */
+  .skills-list li {
+    color: #2c3e50;  /* Darker color for better visibility */
+  }
+  
+  .skills-list li:hover {
+    color: #2980b9;  /* Change color on hover */
+  }
+  
+  /* Certificates Section */
+  .certificates-container {
+    background-color: #f9f9f9;  /* Light background for certificates */
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .certificates-list {
+    font-size: 1.2rem;
+    color: #555;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .certificates-list li {
+    margin: 0.5rem 0;
+  }
+  
+  .certificates-list strong {
+    color: #333;
+  }
+  
+  .certificates-list a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  
+  .certificates-list a:hover {
+    text-decoration: underline;
+  }
+  

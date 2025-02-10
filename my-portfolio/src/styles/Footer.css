@@ -1,0 +1,43 @@
+.footer {
+    background-color: #ADD8E6;  /* Light blue background */
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Ensures it doesn't overlap with content */
+    bottom: 0;
+  }
+  
+  .footer-content {
+    text-align: center;
+    color: black;
+  }
+  
+  .footer-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    color: black;
+    font-size: 1.5rem; /* Smaller size */
+    margin: 0 1rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #4b8cff; /* Darker blue on hover */
+  }
+  
+  /* Additional styles for the page content to push the footer down */
+  .page-content {
+    padding-bottom: 100px; /* Gives space for the footer when the content is short */
+  }
+  
+  

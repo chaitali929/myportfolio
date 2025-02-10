@@ -1,0 +1,126 @@
+/* Home Page Container */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5%;
+    background-color: #f4f8fb;
+    flex-wrap: wrap;
+    width: 100vw;  /* Ensure full width of the screen */
+    margin: 0;  /* Remove any default margin */
+    box-sizing: border-box;  /* To make sure padding doesn't cause overflow */
+  }
+  
+  /* Left Section */
+  .left-section {
+    width: 50%;
+  }
+  
+  .home-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 1rem 0;
+  }
+  
+  .additional-info {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  /* Right Section */
+  .right-section {
+    width: 40%;
+  }
+  
+  .home-photo {
+    width: 100%;
+    height: 100%;  /* Ensure the height matches the width */
+    object-fit: cover;
+    border: 3px solid #ADD8E6;
+  }
+  
+  /* Mobile and Tablet Screens - Below 768px */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      padding: 2rem 3%;
+      width: 100vw;  /* Full width of the viewport */
+      margin: 0;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .home-title {
+      font-size: 2rem;
+    }
+  
+    .home-description {
+      font-size: 1.1rem;
+    }
+  
+    .home-photo {
+      width: 80%;
+      margin: 1rem 0;
+    }
+  }
+  
+  /* Small Screens (Phones) - Below 480px */
+  @media (max-width: 480px) {
+    .home-container {
+      padding: 1.5rem 2%;  /* Adjust padding for very small screens */
+      width: 100vw;  /* Ensure full width */
+      margin: 0;
+    }
+  
+    .home-title {
+      font-size: 1.8rem;
+    }
+  
+    .home-description {
+      font-size: 1rem;
+    }
+  
+    .home-photo {
+      width: 70%;  /* Adjust photo size */
+    }
+  }
+  
+  /* Navbar Centering for Mobile */
+  @media (max-width: 480px) {
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;  /* Ensure navbar takes full width */
+      margin: 0;  /* No margin */
+      padding: 0;  /* No padding */
+    }
+  
+    .navbar-item {
+      margin: 0 0.5rem;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    width: 100vw;  /* Ensure the footer takes up the full width of the screen */
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;  /* Stick footer to the bottom */
+    left: 0;  /* Full width from left side */
+    margin: 0;  /* Remove margin */
+  }
+  
